@@ -1,0 +1,84 @@
+html{
+    background-color: #202020;
+    scrollbar-width: thin;
+    scrollbar-color: #1854f1 #202020;
+    scroll-behavior: smooth;
+  }
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
+  }
+  .header{
+    position: fixed;
+    display: flex;
+    top: 0;
+    left: 0;
+    height: 50px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background: #3a3b3d;
+    color: #fff;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .header .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .header .logo .logo-text{
+    font-family: changa;
+    font-size: calc(12px + 1.5vw);
+  }
+  .header .logo .logo-image{
+    width: auto;
+    height: calc(12px + 1.5vw);
+    min-height: 20px;
+    padding: 5px;
+  }
+  .body{
+    position: relative;
+    top: 50px;
+    left: 0;
+    height: calc(100vh - 55px);
+    width: calc(100% - 10px);
+    overflow-y: auto;
+    font-size: 100%;
+    background: #3a3b3d;
+    color: #fff;
+    margin-top: 5px !important;
+    margin-left: 5px !important;
+    margin-right: 5px !important;
+    padding: 10px !important;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+  }
+  /* Scroll Bar */
+  html::-webkit-scrollbar, iframe body::-webkit-scrollbar {
+    width: 12px;
+  }
+  html::-webkit-scrollbar-track, iframe body::-webkit-scrollbar-track {
+    background: #616161;
+  }
+  html::-webkit-scrollbar-thumb, iframe body::-webkit-scrollbar-thumb {
+    background-color: #1854f1;
+    border-radius: 20px;
+    border: 3px solid #616161;
+  }
+  /* Under Construction */
+  .under-construction{
+    display: flex;
+    justify-content: center;
+  }
+  .under-construction h1{
+    position: absolute;
+    align-self: center;
+    margin: 10px;
+    padding: 10px;
+    top: 30%;
+    font-size: larger;
+    word-break: break-word;
+  }
