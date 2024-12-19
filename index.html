@@ -1,17 +1,17 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html id="html" lang="en" dir="ltr">
     <head>
         <meta charset="UTF-8">
         <title>Curated News Business</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
         <meta http-equiv="Content-Security-Policy" content="default-src 'self' curatednews.xyz;style-src 'self' 'nonce-KuH5RgSyF4u0dve' curatednews.xyz;img-src 'self' data: curatednews.xyz;">
-        <meta name="description" content="Curated News is a misinformation-proof news and content aggregation platform. We serve better content than our competitors for fractions of the cost.">
+        <meta name="description" content="Curated News Business helps prospective employees, partners, and journalists get transparent information about our service that is unrelated to our core product.">
         <meta name="keywords" content="news, content, media">
         <meta name="copyright" content="Curated News">
-        <meta name="robots" content="index,nofollow">
+        <meta name="robots" content="index,follow">
         <meta http-equiv="expires" content="302400">
         <meta property="og:image" content="https://curatednews.xyz/static/images/homeogimage.png">
-        <meta id="theme-color" name="theme-color" content="#242527">
+        <meta id="theme-color" name="theme-color" content="#282828">
         <link rel="stylesheet" nonce="" href="static/css/style.css">
         <link rel="stylesheet" nonce="" href="static/css/fonts.css">
         <link rel="shortcut icon" type="image/jpg" href="https://curatednews.xyz/static/images/favicon.ico">
@@ -26,17 +26,245 @@
         <link rel="apple-touch-icon" sizes="152x152" href="https://curatednews.xyz/static/images/apple-icons/apple-touch-icon-152x152.png">
         <link rel="apple-touch-icon" sizes="167x167" href="https://curatednews.xyz/static/images/apple-icons/apple-touch-icon-167x167.png">
         <link rel="apple-touch-icon" sizes="180x180" href="https://curatednews.xyz/static/images/apple-icons/apple-touch-icon-180x180.png">
-        <noscript><meta http-equiv="refresh" content="1;url=curatedbusinessnojs.html"></noscript>
+        <noscript><meta http-equiv="refresh" content="1;url=nojs.html"></noscript>
    </head>
-    <body>
-        <section class="header">
-            <div class="logo">
-                <img class="logo-image" src="https://curatednews.xyz/static/images/logo.png">
-                <h1 class="logo-text">Curated News Business</h1>
-            </div> 
+    <body class="body-large-screens">
+        <div id="menu" class="menu">
+            <div class="menu-entry">
+                <span class="menu-explainer">Curated News Business</span>
+                <p id="menu-explainer-text" class="menu-explainer-text">Helps prospective employees, partners, and journalists get transparent information about our service that is unrelated to our core product.</p>
+            </div>
+            <a href="index.html" data-label="Get a brief rundown on our service so you can better understand how we do what we do." class="menu-link">About</a>
+            <a href="https://careers.curatednewsbusiness.xyz/" data-label="Want to work for Curated News? See how we recruit and apply for jobs via our employment portal." class="menu-link">Careers</a>
+            <a href="https://curatednews.xyz/" data-label="Check out our consumer site to see our service and learn how we operate." class="menu-link">Consumers</a>
+            <a href="https://partners.curatednewsbusiness.xyz/" data-label="Become a partner so you can utilize Curated News' ecosystem to empower your company priorities." class="menu-link">Partnerships</a>
+        </div>
+        <div id="side-menu" class="side-menu large-screens-remove-it">
+            <select name="theme-mode-mobile" id="theme-mode-mobile" class="header-theme-selection">
+                <option value="dark-mode">Dark</option>
+                <option value="light-mode">Light</option>
+            </select>
+            <div class="social-grid-container">
+                <div class="social-grid-item"><i class="fa fa-github-alt" aria-hidden="true"></i> Github</div>
+                <div class="social-grid-item"><i class="fa fa-linkedin" aria-hidden="true"></i> LinkedIn</div>
+                <div class="social-grid-item"><i class="fa fa fa-facebook" aria-hidden="true"></i> Facebook</div>
+                <div class="social-grid-item"><i class="fa fa-rss" aria-hidden="true"></i> RSS</div>
+            </div>
+        </div>
+        <div id="login-menu" class="login-menu">
+            <div class="login-side-menu phone-mobile-remove-it">
+                <div id="login-side-menu-box">
+                    <p>Site hours of operation</p>
+                    <ul>
+                        <li>9:00am - 5:00pm EST</li>
+                        <li id="business-hours-converted"></li>
+                        <li id="business-hours-remaining"></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="login-form-container">
+                <form id="login-form" action="https://curatednews.curatednewsbusiness.xyz/login" method="post" class="login-form">
+                    <img src="https://curatednews.xyz/static/images/logo.png" width="100%" height="auto">
+                    <span class="spacer"></span>
+                    <div class="login-form-label-input">
+                        <label for="username"><i class="fa fa-user" aria-hidden="true"></i> Username</label>
+                        <input id="username" type="text" placeholder="Enter username..." autocomplete="off" required>
+                    </div>
+                    <span class="spacer"></span>
+                    <div class="login-form-label-input">
+                        <label for="password"><i class="fa fa-key" aria-hidden="true"></i> Password</label>
+                        <input id="password" type="password" placeholder="Enter password..." autocomplete="off" required>
+                    </div>
+                    <span class="spacer"></span>
+                    <span class="spacer"></span>
+                    <input type="submit" value="Login" class="login-submit-button">
+                    <p class="notice-addendum">
+                        By logging into your account, you agree to our <a href="https://curatednews.xyz/curatedterms">Terms &amp; Conditions</a> and <a href="https://curatednews.xyz/curatedacceptableusepolicy">Acceptable Use Policy</a>. For information about Curated New's privacy practices, see our <a href="https://curatednews.xyz/curatedprivacy">Privacy Policy</a>.
+                    </p>
+                    <p class="need-account">
+                        Don't have an account? <a href="https://curatednews.curatednewsbusiness.xyz/signup" id="curated-business-signup" class="calltoaction">Signup</a>
+                    </p>
+                </form>
+            </div>
+        </div>
+        <section id="header" class="header">
+            <span id="menu-button" class="header-menu">
+                <i id="menu-icon" class="fa fa-bars" aria-hidden="true"></i>
+            </span>
+            <div class="logo phone-mobile-remove-it">
+                <!--<img class="logo-image" src="https://curatednews.xyz/static/images/logo.png">-->
+                <h1 class="logo-text"><a href="https://curatednews.xyz/" title="Visit our product.">curatednews.xyz</a> for business <i class="fa fa-check" aria-hidden="true"><a id="logo-explainer" class="logo-explainer" href="https://curatednews.xyz/curatedverification/" title="Verify this domain is ours.">curated verified&nbsp;</a></i></h1>
+            </div>
+            <select name="theme-mode" id="theme-mode" class="header-theme-selection phone-mobile-remove-it">
+                <option value="dark-mode">Dark</option>
+                <option value="light-mode">Light</option>
+            </select>
+            <span id="login-button" class="header-sign-in">Login</span>
         </section>
-        <section class="body">
-            <div class="under-construction"><h1>Under Construction</h1></div>
+        <section id="body" class="body">
+            <div id="logo-wrapper" class="logo-wrapper">
+                <img src="static/images/curatedbusinesslogo.png" width="100px" height="auto">
+                <div>
+                    <h1 id="curated-business-slogan">News is our business.</h1>
+                    <p class="quick-pitch">How you do business matters. Do business the right way with <b>Curated News</b>.</p>
+                </div>
+            </div>
+            <div id="dropdown-menu-container" class="dropdown-menu-container">
+                <div class="dropdown-menu">
+                    <a href="index.html" title="Get a brief rundown on our service so you can better understand how we do what we do.">About</a>
+                    <a href="https://careers.curatednewsbusiness.xyz/" title="Want to work for Curated News? See how we recruit and apply for jobs via our employment portal.">Careers</a>
+                    <a href="https://partners.curatednewsbusiness.xyz/" title="Become a partner so you can utilize Curated News' ecosystem to empower your company priorities.">Partnerships</a>
+                </div>
+            </div>
+            <header id="header-actual">
+                <div class="header-body">
+                    <p>Access to our business page is only available during working hours from 9:00am to 5:00pm Eastern Standard Time (EST).</p>
+                </div>
+            </header>
+            <div class="body-grid-container">
+                <div class="body-grid-item">
+                    <img src="static/images/curatedtargetmarket.png" width="100%" height="auto">
+                </div>
+                <div class="body-grid-item">
+                    <p>Curated News Business is the official <a href="https://curatednews.xyz" title="Our official consumer website.">Curated News</a> business web page. See how you can benefit from Curated News by becoming a partner.</p>
+                    <span id="curated-business-learn-more" class="learn-more">Learn more</span>
+                </div>
+            </div>
+            <div class="body-grid-item-full-size">
+                <p>We are a platform multi-tool for individuals and businesses who want efficiency.</p>
+            </div>
+            <div class="body-grid-container">
+                <div class="body-grid-item">
+                    <img src="static/images/curatedaaas.png" width="100%" height="auto">
+                </div>
+                <div class="body-grid-item">
+                    <p>Curated News Business is Architecture as a Service (AaaS), using small data to minimize operating costs, passing savings on to customers.</p>
+                    <span id="curated-aaas-learn-more" class="learn-more">Learn more</span>
+                </div>
+            </div>
+            <div class="body-grid-container">
+                <div class="body-grid-item">
+                    <img src="static/images/curateddaas.png" width="100%" height="auto">
+                </div>
+                <div class="body-grid-item">
+                    <p>Curated News Business is Data as a Service (DaaS), preprocessing through our high quality misinformation-proof funnel.</p>
+                    <span id="curated-daas-learn-more" class="learn-more">Learn more</span>
+                </div>
+            </div>
+            <div class="body-grid-container">
+                <div class="body-grid-item">
+                    <img src="static/images/curatedsecaas.png" width="100%" height="auto">
+                </div>
+                <div class="body-grid-item">
+                    <p>Curated News Business is Security as a Service (SECaaS), making it impossible for bad actors to game our techniques after hard-coding it into our technical design.</p>
+                    <span id="curated-secaas-learn-more" class="learn-more">Learn more</span>
+                </div>
+            </div>
+            <div class="body-grid-container">
+                <div class="body-grid-item">
+                    <img src="static/images/curatedsaas.png" width="100%" height="auto">
+                </div>
+                <div class="body-grid-item">
+                    <p>Curated News Business is Software as a Service (SaaS), making it easier to gain efficiency without the hassles of technical know-how.</p>
+                    <span id="curated-saas-learn-more" class="learn-more">Learn more</span>
+                </div>
+            </div>
+            <div class="body-grid-item-full-size">
+                <p>We leverage our internal company programs to ensure compliance with our core missions.</p>
+            </div>
+            <div class="body-grid-container">
+                <div class="body-grid-item">
+                    <img src="static/images/curatedgreen.png" width="100%" height="auto">
+                </div>
+                <div class="body-grid-item">
+                    <p>Curated News Business celebrates its Curated Green status. Our Curated Green program ensures we use as little resources as possible, limiting scalable transactions that use up more electricity.</p>
+                    <span id="curated-green-learn-more" class="learn-more">Learn more</span>
+                </div>
+            </div>
+            <div class="body-grid-container">
+                <div class="body-grid-item">
+                    <img src="static/images/curatedmentalhealthy.png" width="100%" height="auto">
+                </div>
+                <div class="body-grid-item">
+                    <p>Curated News Business celebrates its Curated Healthy status. Our Curated Healthy program ensures we think about the health of our ecosystem. Curated News helps people consume information and socialize safely, knowing their behavior doesn't feed our platforms.</p>
+                    <span id="curated-healthy-learn-more" class="learn-more">Learn more</span>
+                </div>
+            </div>
+            <div class="body-grid-item-full-size">
+                <p>We open source so researchers, technical experts, and beginners get involved.</p>
+            </div>
+            <div class="body-grid-container">
+                <div class="body-grid-item">
+                    <img src="static/images/curatedopensource.png" width="100%" height="auto">
+                </div>
+                <div class="body-grid-item">
+                    <p>Curated News Business uses minimal obfuscation. This way our data is protected but your interface to our data is reproducible. We don't like code that is hard to track because it is hard to audit.</p>
+                    <span id="curated-opensource-learn-more" class="learn-more">Learn more</span>
+                </div>
+            </div>
+            <footer id="footer-actual">
+                <div class="footer-body">
+                    <p>Site Navigation</p>
+                </div>
+                <div id="footer-grid-container" class="footer-grid-container">
+                    <div class="footer-sitemap">
+                        <div>
+                            <a>Consumers</a>
+                            <a href="https://curatednews.xyz">Curated News</a>
+                            <a href="https://curatednews.xyz/curatedfaq">Curated News FAQ</a>
+                            <a href="https://curatednews.xyz/curatedtools">Curated News Tools</a>
+                        </div>
+                        <div>
+                            <a>Business</a>
+                            <a href="https://curatednewsbusiness.xyz">Curated Business</a>
+                            <a href="https://careers.curatednewsbusiness.xyz">Curated Careers</a>
+                            <a href="https://partners.curatednewsbusiness.xyz">Curated Partnerships</a>
+                        </div>
+                    </div>
+                    <div class="footer-sitemap">
+                        <div>
+                            <a>Legals</a>
+                            <a href="https://curatednews.xyz/curatedterms">Terms & Conditions</a>
+                            <a href="https://curatednews.xyz/curatedacceptableusepolicy">Acceptable Use</a>
+                            <a href="https://curatednews.xyz/curatedprivacy">Privacy Policy</a>
+                        </div>
+                        <div>
+                            <a>Contact</a>
+                            <a href="https://curatednews.xyz/curatedcontact">Contact Us</a>
+                            <a href="https://curatednews.xyz/curatedbugreporter">Report Bugs</a>
+                        </div>
+                    </div>
+                    <div class="footer-sitemap">
+                        <div>
+                            <a>Socials</a>
+                            <a href="https://www.facebook.com/theofficialcuratednews/">Facebook</a>
+                            <a href="https://www.linkedin.com/company/curatednews">LinkedIn</a>
+                            <a href="https://github.com/CuratedNews">Github</a>
+                            <a href="https://curatednews.xyz/curatedupdates.rss">RSS</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-copyright">
+                    <p><i class="fa fa-copyright" aria-hidden="true"></i> Curated News</p>
+                </div>
+            </footer>
+            <div id="body-side-box" class="body-side-box">
+               <!--<span id="side-box-segway" class="side-box-segway"></span>-->
+               <div id="side-box-information" class="side-box-information">
+                <h2>Notifications</h2>
+                <div id="side-box-notifier">
+                    <div>
+                        <ul>
+                            <li>Visit <a href="https://curatednews.xyz/curatedplatforms" title="Our status page for all of our platforms.">Platforms</a> for product updates.</li>
+                            <li>Visit <a href="https://curatednews.xyz/curatedcontact" title="Our contact form for non-account holders.">Contact</a> to contact us.</li>
+                            <li id="current-est-time"></li>
+                            <li id="current-time-left-open"></li>
+                        </ul>
+                        <span id="curated-business-notifications-learn-more">Learn more</span>
+                    </div>
+                </div>    
+               </div>
+            </div>
         </section>
         <script src="static/js/index.js"></script>
     </body>
