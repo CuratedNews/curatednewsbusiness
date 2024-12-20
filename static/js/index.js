@@ -74,6 +74,7 @@ menuButton.addEventListener("click", function() {
         menuIcon.classList.add("fa-arrow-left");
         const loginButton = document.getElementById("login-button");
         loginButton.style.display = "none";
+        menu.style.overflow = "hidden";
         menuStatus = true;
     } else {
         menu.style.left = "-70%"
@@ -82,6 +83,7 @@ menuButton.addEventListener("click", function() {
         menuIcon.classList.add("fa-bars");
         const loginButton = document.getElementById("login-button");
         loginButton.style.display = "block";
+        menu.style.overflow = "auto";
         menuStatus = false;
     }
 });
@@ -95,12 +97,25 @@ if(time>openingHour && time<closingHour){
         if(loginMenuStatus == false){
             loginMenu.style.bottom = "0";
             loginButton.innerHTML = '<i class="fa fa-arrow-down" aria-hidden="true"></i>';
-            menuIcon.style.display = "none";
+            loginButton.style.height = "auto";
+            loginButton.style.backgroundColor = "transparent";
+            loginButton.style.border = "none";
+            menuButton.style.display = "none";
+            menuButton.style.cssText = "display: none !important;";
             loginMenuStatus = true;
         } else {
             loginMenu.style.bottom = "-100%"
             loginButton.innerHTML = "Login";
-            menuIcon.style.display = "block";
+            if(savedTheme.includes("light-mode")){
+                loginButton.style.backgroundColor = "#EEEEEE";
+                menuButton.style.backgroundColor = "#EEEEEE";
+            } else {
+                loginButton.style.backgroundColor = "";
+                menuButton.style.backgroundColor = "";
+            }
+            loginButton.style.height = "";
+            loginButton.style.border = "";
+            menuButton.style.display = "";
             loginMenuStatus = false;
         }
     })
@@ -218,7 +233,7 @@ function makeModal(title, message, html) {
         modalDiv.id = "modal";
         modalDiv.innerHTML = `
           <div id="full-page-modal" class="full-page-modal">
-            <span id="full-page-modal-close" class="full-page-modal-close">Close</span>
+            <span id="full-page-modal-close" class="full-page-modal-close"><i class="fa fa-times" aria-hidden="true"></i></span>
             <div class="full-page-modal-inner-container">
                 <h1 id="full-page-modal-title" class="full-page-modal-title"><i class="fa fa-hashtag" aria-hidden="true"></i> ${title}</h1>
                 <h4>${message}</h4>
@@ -454,4 +469,21 @@ function makeModal(title, message, html) {
         }
         localStorage.setItem('theme', themeValue);
     }
+  }
+  setMenuRedirects();
+  function setMenuRedirects(){
+    //temporarily set to under construction page
+    const mobileCareersLink = document.getElementById("mobile-careers-page");
+    const mobilePartnersLink = document.getElementById("mobile-partners-page");
+    const desktopCareersLink = document.getElementById("desktop-careers-page");
+    const desktopPartnersLink = document.getElementById("desktop-partners-page");
+    const navigationCareersLink = document.getElementById("navigation-careers-page");
+    const navigationPartnersLink = document.getElementById("navigation-partners-page");
+
+    mobileCareersLink.setAttribute("href", "https://curatednewsbusiness.xyz/construction");
+    mobilePartnersLink.setAttribute("href", "https://curatednewsbusiness.xyz/construction");
+    desktopCareersLink.setAttribute("href", "https://curatednewsbusiness.xyz/construction");
+    desktopPartnersLink.setAttribute("href", "https://curatednewsbusiness.xyz/construction");
+    navigationCareersLink.setAttribute("href", "https://curatednewsbusiness.xyz/construction");
+    navigationPartnersLink.setAttribute("href", "https://curatednewsbusiness.xyz/construction");
   }
